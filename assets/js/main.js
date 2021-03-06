@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var currentDir = $("a").css("direction");
+  console.log(currentDir);
 
   if ($(".news-slider").length) {
     $(".news-slider").slick({
@@ -10,11 +11,11 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      rtl: currentDir == "rtl" ? true : false,
+      // rtl: currentDir == "rtl" ? true : false,
       loop: true,
       arrows: false,
       infinite: true,
-      cssEase: 'linear',
+      cssEase: 'linear', 
       responsive: [
         {
           breakpoint: 1024,
@@ -54,17 +55,17 @@ $(document).ready(function () {
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
-      rtl: currentDir == "rtl" ? true : false,
+      // rtl: currentDir == "rtl" ? true : false,
       loop: true,
       arrows: false,
       infinite: true,
       cssEase: 'linear',
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1026,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             infinite: true,
             dots: true,
           },
@@ -72,8 +73,8 @@ $(document).ready(function () {
         {
           breakpoint: 800,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 1,
             dots: true,
           },
         },
